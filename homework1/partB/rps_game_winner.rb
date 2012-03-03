@@ -11,14 +11,14 @@ def rps_game_winner(game)
   raise NoSuchStrategyError unless rules.has_key?(game[0][1])
   raise NoSuchStrategyError unless rules.has_key?(game[1][1])
   if rules[game[0][1]].include? (game[1][1])
-    print game[0]
+    p game[0]
   else 
-    print game[1]
+    p game[1]
   end
 end
 
 
-rps_game_winner([ [ "Armando", "P"], ["Dave", "X"] ])
+rps_game_winner([ [ "Armando", "P"], ["Dave", "R"] ])
 rps_game_winner([ [ "Armando", "P"], ["Dave", "S"] ])
 rps_game_winner([ [ "Armando", "P"], ["Dave", "P"] ])
 rps_game_winner([ [ "Armando", "P"], ["Dave", "R"] ])

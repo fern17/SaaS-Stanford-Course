@@ -1,7 +1,7 @@
 class WrongNumberOfPlayersError < StandardError ; end
 class NoSuchStrategyError < StandardError ; end
 
-def rps_game_winner(game)
+def rps_game_winner2(game)
   raise WrongNumberOfPlayersError unless game.length == 2
   rules = Hash.new
   rules["R"] = ["R","S"]
@@ -16,6 +16,11 @@ def rps_game_winner(game)
   end
 end
 
+#wrapper
+def rps_game_winner(game)
+  p rps_game_winner2(game)
+end
+
 def rps_tournament_winner2(game)
   if game.length == 1 or game[0].kind_of?(Array) == false
     return game
@@ -26,17 +31,13 @@ def rps_tournament_winner2(game)
       newgame = [g1,g2]
       return rps_tournament_winner2(newgame)
    else
-     return rps_game_winner(game)
+     return rps_game_winner2(game)
    end
   end
 end
 
+#wrapper
 def rps_tournament_winner(game)
-  print rps_tournament_winner2(game)
+  p rps_tournament_winner2(game)
 end
-
-my_game = [ [ [ ["Armando","P"],["Dave","S"] ], [ [ "Richard", "R"], ["Michael","S"] ], ], [ [ [ "Allen","S"], ["Omer","P"] ], [ [ "David E.", "R"], [ "Richard X.","P" ] ] ] ]
-my_game3 = ["Fer","P"]
-my_game2 = [ [ [ [ "Allen","S"], ["Omer","P"] ], [ [ "David E.", "R"], [ "Richard X.","P" ] ] ] , [ [ ["Armando","P"],["Dave","S"] ], [ [ "Richard", "R"], ["Michael","S"] ] ]]
-rps_tournament_winner(my_game)
 
