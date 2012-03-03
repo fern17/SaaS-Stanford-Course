@@ -19,22 +19,21 @@ end
 
 
 def rps_tournament_winner(game)
-  if game.length == 1 or game[0].kind_of?(Array) == false
-    return game
-  else
-    if game[0][0].kind_of?(Array)
-      g1 = rps_tournament_winner(game[0])
-      g2 = rps_tournament_winner(game[1])
-      newgame = [g1,g2]
-      return rps_tournament_winner(newgame)
-   else
-     return rps_game_winner(game)
-   end
-  end
+  game.flatten!
+  winners = Array.new
+  begin 
+    game.each_slice(4) do |p1,g1,p2,g2|
+      play = [[p1,g1],[p2,g2]]
+      #p play
+      winners << rps_game_winner( play )
+      winners.flatten!(1)
+    end
+    game = winners
+  end while winners.length > 2
+  puts game[0]
 end
 
 my_game = [ [ [ ["Armando","P"],["Dave","S"] ], [ [ "Richard", "R"], ["Michael","S"] ], ], [ [ [ "Allen","S"], ["Omer","P"] ], [ [ "David E.", "R"], [ "Richard X.","P" ] ] ] ]
-my_game3 = ["Fer","P"]
+
 my_game2 = [ [ [ [ "Allen","S"], ["Omer","P"] ], [ [ "David E.", "R"], [ "Richard X.","P" ] ] ] , [ [ ["Armando","P"],["Dave","S"] ], [ [ "Richard", "R"], ["Michael","S"] ] ]]
-win = rps_tournament_winner(my_game2)
-p win
+rps_tournament_winner(my_game2)
