@@ -4,13 +4,14 @@ def count_words(string)
   a = str.split
   hash = Hash.new
   a.each{ |word| hash[word] = a.count(word)}
-  return hash
+  puts hash
 end
 
 def palindrome?(string)
   w = string.gsub(/\W/,'')
   w.downcase!
-  w.eql?(w.reverse)
+  puts w.eql?(w.reverse)
 end
 
-
+palindrome?("hoh")
+count_words("a b a b")
