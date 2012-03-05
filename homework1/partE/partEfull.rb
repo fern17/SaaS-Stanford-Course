@@ -26,9 +26,4 @@ class Foo
   attr_accessor_with_history :bar
 end
 
-f = Foo.new
-f.bar = 1
-p f.bar
-f.bar = 2
-p f.bar
-p f.bar_history
+
