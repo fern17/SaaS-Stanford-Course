@@ -7,7 +7,6 @@ class MoviesController < ApplicationController
   end
 
   def index
-    @movies = Movie.all
     if params[:ratings] != nil
       if params[:sort_by] == "date"
         @movies = Movie.find(:all, :order => "release_date", 
