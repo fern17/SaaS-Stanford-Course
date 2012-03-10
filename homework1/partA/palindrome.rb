@@ -1,11 +1,11 @@
-def count_words(string)
-  str = string.gsub(/\W/, ' ')
-  str.downcase!
-  a = str.split
-  hash = Hash.new
-  a.each{ |word| hash[word] = a.count(word)}
-  print hash
+def palindrome?(string)
+    w = string.gsub(/\W/,'')
+    w.downcase!
+    w.eql?(w.reverse)
 end
 
-count_words("A man, a plan, a canal -- Panama")
+p palindrome?("Madam, I'm Adam!")
+p palindrome?("A man, a plan, a canal -- Panama")
+p palindrome?("Abracadabra")
+p palindrome?("  ")
 
