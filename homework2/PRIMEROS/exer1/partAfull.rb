@@ -26,7 +26,9 @@ class Numeric
     end
   end
   def in (conversion)
-    self.send (conversion)
+    singular_currency = conversion.to_s.gsub(/s$/,'')
+    self / @@currencies[singular_currency]
   end
 end
+
 
