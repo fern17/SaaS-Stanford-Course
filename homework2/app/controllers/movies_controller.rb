@@ -7,6 +7,32 @@ class MoviesController < ApplicationController
   end
 
   def index
+#    reset_session
+    redirect = false
+    value_sort = nil
+    if params[:sort_by] == nil and not session[:sort_by].eql? nil
+      value_sort = session[:sort_by]
+      session[:sort_by] = nil
+      redirect = true
+    end
+    
+    value_ratings = nil
+    if params[:ratings] == nil and not session[:ratings].eql? nil
+      value_ratings = session[:ratings]
+      session[:ratings] = nil
+      redirect = true
+    end
+    
+    if redirect == true
+      if value_sort != nil and value_ratings != nil
+        redirect_to movies_path(:sort_by => value_sort, :ratings => value_ratings)
+      elsif value_sort != nil and value_ratings == nil
+        redirect_to movies_path(:sort_by => value_sort)
+      else
+        redirect_to movies_path(:ratings => value_ratings)
+      end
+      return
+    end
     if params[:ratings] != nil
       if params[:sort_by] == "date"
         @movies = Movie.find(:all, :order => "release_date", 
@@ -28,6 +54,12 @@ class MoviesController < ApplicationController
       end
     end
     all_ratings
+   if not params[:sort_by].eql? nil
+     session[:sort_by] = params[:sort_by]
+   end
+   if not params[:ratings].eql? nil
+     session[:ratings] = params[:ratings]
+   end
   end
 
   def new
