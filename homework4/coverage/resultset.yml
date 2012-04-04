@@ -1,0 +1,280 @@
+--- 
+"/usr/local/bin/rspec ": 
+  :original_result: 
+    /home/saasbook/hw4_rottenpotatoes/app/controllers/application_controller.rb: 
+    - 1
+    - 1
+    - 
+    /home/saasbook/hw4_rottenpotatoes/app/helpers/application_helper.rb: 
+    - 1
+    - 
+    /home/saasbook/hw4_rottenpotatoes/app/helpers/movies_helper.rb: 
+    - 1
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    /home/saasbook/hw4_rottenpotatoes/app/controllers/movies_controller.rb: 
+    - 1
+    - 
+    - 1
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 0
+    - 
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    /home/saasbook/hw4_rottenpotatoes/app/models/movie.rb: 
+    - 1
+    - 1
+    - 0
+    - 
+    - 
+  :created_at: 2012-03-22 21:50:03.985018 -07:00
+RSpec: 
+  :original_result: 
+    /home/saasbook/hw4_rottenpotatoes/app/controllers/application_controller.rb: 
+    - 1
+    - 1
+    - 
+    /home/saasbook/hw4_rottenpotatoes/app/helpers/application_helper.rb: 
+    - 1
+    - 
+    /home/saasbook/hw4_rottenpotatoes/app/helpers/movies_helper.rb: 
+    - 1
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    /home/saasbook/hw4_rottenpotatoes/app/controllers/movies_controller.rb: 
+    - 1
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 0
+    - 
+    - 0
+    - 0
+    - 
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 0
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    /home/saasbook/hw4_rottenpotatoes/app/models/movie.rb: 
+    - 1
+    - 1
+    - 0
+    - 
+    - 
+  :created_at: 2012-03-24 16:23:21.994294 -07:00
+Cucumber Features: 
+  :original_result: 
+    /home/saasbook/hw4_rottenpotatoes/app/controllers/application_controller.rb: 
+    - 1
+    - 1
+    - 
+    /home/saasbook/hw4_rottenpotatoes/app/helpers/application_helper.rb: 
+    - 1
+    - 
+    /home/saasbook/hw4_rottenpotatoes/app/helpers/movies_helper.rb: 
+    - 1
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    /home/saasbook/hw4_rottenpotatoes/app/controllers/movies_controller.rb: 
+    - 1
+    - 
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 
+    - 0
+    - 
+    - 
+    - 
+    - 1
+    - 1
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 2
+    - 2
+    - 2
+    - 
+    - 0
+    - 
+    - 0
+    - 
+    - 2
+    - 2
+    - 
+    - 2
+    - 0
+    - 0
+    - 
+    - 
+    - 2
+    - 0
+    - 0
+    - 0
+    - 
+    - 2
+    - 
+    - 
+    - 1
+    - 
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 
+    - 
+    - 
+    /home/saasbook/hw4_rottenpotatoes/app/models/movie.rb: 
+    - 1
+    - 1
+    - 2
+    - 
+    - 
+  :created_at: 2012-03-24 15:25:16.632095 -07:00

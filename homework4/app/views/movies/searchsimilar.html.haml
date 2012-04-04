@@ -1,0 +1,15 @@
+%h2 Similar Movies to #{@movie.title}
+%h2 Director: #{@movie.director}
+
+%table#movies
+  %thead
+    %tr
+      %th Movie Title 
+      %th More Info
+  %tbody
+    - @movies.each do |m|
+      %tr
+        %td= m.title 
+        %td= link_to "More about #{m.title}", movie_path(m)
+
+
